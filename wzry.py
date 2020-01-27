@@ -12,6 +12,11 @@ hero_number = list(map(lambda x: x['ename'], herolist.json()))  # 提取英雄�
 
 # 下载图片
 def downloadPic():
+
+    #创建文件夹
+    os.mkdir("D:\\wzry\\" )
+    # 进入创建好的文件夹
+    os.chdir("D:\\wzry\\" )
     i = 0
     for j in hero_number:
         # 创建文件夹
